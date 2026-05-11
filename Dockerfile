@@ -35,5 +35,4 @@ RUN qmake && \
     make -j$(nproc) && \
     make install
 
-RUN ln -s /usr/local/bin/nifskope /usr/bin/nifskope
-CMD ["nifskope"]
+CMD ["/opt/nifskope/release/NifSkope"]
